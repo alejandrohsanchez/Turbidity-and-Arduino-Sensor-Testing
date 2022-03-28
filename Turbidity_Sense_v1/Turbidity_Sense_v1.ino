@@ -15,7 +15,7 @@ void setup() {
 }
 void loop() {
   // First read the input on the analog pin 0 (A0)
-  int sensorValue = analogRead(sensorPin);// read the input on analog pin 0:
+  float sensorValue = analogRead(sensorPin);// read the input on analog pin 0:
   
   // Using for loop to find average value of voltage.
   // Average value is necessary to accommodate for sensor noise.
