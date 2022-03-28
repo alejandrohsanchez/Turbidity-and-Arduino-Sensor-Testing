@@ -41,7 +41,7 @@ void loop() {
    * Print out the newly mapped values
    * (representing NTU calibrated scale) 
    */
-  Serial.print("NTU = "); // print out the value you read:
+  Serial.print("NTU Approximation = "); // print out the value you read:
   Serial.println(turbidity);
   delay(250);
 }
