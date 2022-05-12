@@ -44,7 +44,7 @@ void loop() {
   digitalWrite(7, LOW);
   
   // Lighting LED based on turbidity measurement
-  if (turbidity<1400) {
+  if (turbidity<195) {
     digitalWrite(5, HIGH);
     delay(50);
     digitalWrite(5, LOW);
@@ -54,17 +54,7 @@ void loop() {
     digitalWrite(5, LOW);
     delay(350);
   }
-  else if (turbidity>=1400 && turbidity<2800) {
-    digitalWrite(6, HIGH);
-    delay(50);
-    digitalWrite(6, LOW);
-    delay(50);
-    digitalWrite(6, HIGH);
-    delay(50);
-    digitalWrite(6, LOW);
-    delay(350);
-  }
-  else if (turbidity>=2800) {
+  else if (turbidity>=195) {
     digitalWrite(7, HIGH);
     delay(50);
     digitalWrite(7, LOW);
