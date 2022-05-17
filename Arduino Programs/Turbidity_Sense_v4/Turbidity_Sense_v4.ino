@@ -34,10 +34,10 @@ void loop() {
   
   
   // Printing to Serial Monitor
-  Serial.print("FTU Approximation = ");
-  Serial.print(turbidity);
-  Serial.print(", Voltage = ");
-  Serial.println(voltage);
+  //Serial.print("FTU Approximation = ");
+  Serial.println(turbidity);
+  //Serial.print(", Voltage = ");
+  //Serial.println(voltage);
 
   digitalWrite(5, LOW);
   digitalWrite(6, LOW);
@@ -45,24 +45,24 @@ void loop() {
   
   // Lighting LED based on turbidity measurement
   if (turbidity<195) {
-    digitalWrite(5, HIGH);
-    delay(50);
-    digitalWrite(5, LOW);
-    delay(50);
-    digitalWrite(5, HIGH);
-    delay(50);
-    digitalWrite(5, LOW);
-    delay(350);
+//    digitalWrite(5, HIGH);
+//    delay(50);
+//    digitalWrite(5, LOW);
+//    delay(50);
+//    digitalWrite(5, HIGH);
+//    delay(50);
+//    digitalWrite(5, LOW);
+    //delay(350);
   }
   else if (turbidity>=195) {
-    digitalWrite(7, HIGH);
-    delay(50);
-    digitalWrite(7, LOW);
-    delay(50);
-    digitalWrite(7, HIGH);
-    delay(50);
-    digitalWrite(7, LOW);
-    delay(350);
+//    digitalWrite(7, HIGH);
+//    delay(50);
+//    digitalWrite(7, LOW);
+//    delay(50);
+//    digitalWrite(7, HIGH);
+//    delay(50);
+//    digitalWrite(7, LOW);
+    //delay(350);
   }
   
   nrf_service_data buf;
